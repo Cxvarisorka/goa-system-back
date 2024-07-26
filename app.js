@@ -15,7 +15,7 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(cors({
-    origin: ['http://localhost:5173', "https://goa-system-gg1hsmxjg-cxvarisorkas-projects.vercel.app"]
+    origin: ['http://localhost:5173', "https://goa-system-gg1hsmxjg-cxvarisorkas-projects.vercel.app", "https://goa-system.vercel.app"]
 }));
 
 // Routes
