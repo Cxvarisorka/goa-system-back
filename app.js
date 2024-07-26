@@ -14,7 +14,9 @@ const app = express();
 // Middleware
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+    origin: ['http://localhost:5173', "https://goa-system-gg1hsmxjg-cxvarisorkas-projects.vercel.app"]
+}));
 
 // Routes
 app.use('/api/users', userRoutes);
